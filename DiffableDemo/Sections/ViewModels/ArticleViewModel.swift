@@ -7,13 +7,7 @@
 
 import Foundation
 
-protocol ArticleViewModelType: Hashable {
-  var type: Article.ArticleType { get }
-  var title: String { get }
-  var image: String { get }
-}
-
-struct ArticleViewModel: ArticleViewModelType {
+struct ArticleViewModel: Hashable {
   let type: Article.ArticleType
   let title: String
   let image: String
